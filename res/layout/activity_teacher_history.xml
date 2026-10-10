@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FB"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvHistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance History"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#172B4D"/>
+
+    <TextView
+        android:id="@+id/tvHistoryCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Sessions"
+        android:textSize="14sp"
+        android:textColor="#667085"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvHistoryEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No attendance history found."
+        android:textSize="15sp"
+        android:textColor="#667085"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="35dp"/>
+
+    <ListView
+        android:id="@+id/listHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FB"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Roster"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#172B4D"/>
+
+    <TextView
+        android:id="@+id/tvStudentsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Roster"
+        android:textSize="15sp"
+        android:textColor="#667085"
+        android:layout_marginTop="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_info_card">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLASS"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#667085"/>
+
+        <TextView
+            android:id="@+id/tvStudentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Students"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginTop="3dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStudentsEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No students found."
+        android:textSize="15sp"
+        android:textColor="#667085"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="30dp"/>
+
+    <ListView
+        android:id="@+id/listStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

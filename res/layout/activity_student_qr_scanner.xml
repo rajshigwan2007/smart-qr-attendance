@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F9FC">
+    <ScrollView android:layout_width="0dp" android:layout_height="0dp" android:fillViewport="true" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UNIATTEND" android:textColor="#2457D6" android:textSize="13sp" android:textStyle="bold" android:letterSpacing="0.16"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="Scan QR Attendance" android:textColor="#111A2E" android:textSize="29sp" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Scan the teacher's current live QR. Only the latest QR can be accepted." android:textColor="#667085" android:textSize="14sp"/>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="250dp" android:layout_marginTop="22dp" app:cardBackgroundColor="#142F68" app:cardCornerRadius="26dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="24dp">
+                    <TextView android:layout_width="92dp" android:layout_height="92dp" android:background="#245FE2" android:gravity="center" android:text="⌗" android:textColor="#FFFFFF" android:textSize="50sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Ready to scan" android:textColor="#FFFFFF" android:textSize="21sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Camera + device verification" android:textColor="#D8E4FA" android:textSize="13sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Button android:id="@+id/btnScanQR" android:layout_width="match_parent" android:layout_height="58dp" android:layout_marginTop="18dp" android:text="SCAN LIVE QR" android:textSize="16sp" android:textStyle="bold" android:backgroundTint="#245FE2"/>
+            <TextView android:id="@+id/tvScanStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="center" android:padding="16dp" android:text="Ready to scan the teacher's live QR." android:textColor="#2457D6" android:textSize="14sp" android:textStyle="bold"/>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="24dp" app:cardBackgroundColor="#FFFFFF" app:cardCornerRadius="20dp" app:cardElevation="1dp">
+                <TextView android:id="@+id/tvStudentDetails" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp" android:textColor="#111A2E" android:textSize="14sp" android:lineSpacingExtra="3dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
