@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@drawable/bg_info_card">
+
+    <TextView
+        android:id="@+id/tvStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#172B4D"/>
+
+    <TextView
+        android:id="@+id/tvStudentRoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roll No: 01"
+        android:textSize="13sp"
+        android:textColor="#475467"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvStudentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="student@email.com"
+        android:textSize="13sp"
+        android:textColor="#667085"
+        android:layout_marginTop="3dp"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "707680492622",
+    "project_id": "smart-qr-attendance-1df85",
+    "storage_bucket": "smart-qr-attendance-1df85.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707680492622:android:97f18320ef7fc67c14f71f",
+        "android_client_info": {
+          "package_name": "com.example.smartqrattendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEviSa6-9hVxpXOxgoPTdm3beqQiExM58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
